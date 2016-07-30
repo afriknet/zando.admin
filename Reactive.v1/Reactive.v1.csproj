@@ -1048,6 +1048,7 @@
     <Content Include="img\p_big3.jpg" />
     <Content Include="img\rails_logo.png" />
     <Content Include="img\zender_logo.png" />
+    <Content Include="js\jquery.steps.js" />
     <Content Include="js\jquery.validate.js" />
     <Content Include="js\plugins\chartist\chartist.min.js.map" />
     <Content Include="js\plugins\diff_match_patch\COPYING" />
@@ -1575,7 +1576,7 @@
     <TypeScriptCompile Include="src\views\home\home.tsx" />
     <TypeScriptCompile Include="src\views\home\login.tsx" />
     <TypeScriptCompile Include="src\views\inventory\articles_categories.tsx" />
-    <TypeScriptCompile Include="src\views\inventory\articles_explorer.tsx" />
+    <TypeScriptCompile Include="src\views\inventory\articles_amazon_explorer.tsx" />
     <TypeScriptCompile Include="src\views\profiles\profiles_explore.tsx" />
   </ItemGroup>
   <ItemGroup>

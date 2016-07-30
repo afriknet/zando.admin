@@ -77,8 +77,7 @@ export class CategoriesExplorer extends core.base.BaseView {
 
         return schema.get('categories');        
     }
-
-
+    
 
     init_actions() {
 

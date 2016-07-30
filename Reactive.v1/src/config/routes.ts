@@ -20,10 +20,10 @@ export var routes: Types.RouteList = {
         url: 'home/home',
     },
 
-    '/inventaire/articles': {
-        url: 'inventory/articles',
+    '/inventaire/amazon': {
+        url: 'inventory/articles_amazon_explorer',
         title: 'Articles',
-        path: ['<a href="/Accueil/articles">Articles</a>', '<strong>Articles</strong>']
+        path: ['<a href="/Accueil/amazon">articles</a>', '<strong>Articles</strong>']
     },
 
     '/inventaire/categories': {

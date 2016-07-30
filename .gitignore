@@ -3,3 +3,6 @@
 ################################################################################
 
 /Reactive.v1/bin
+/Reactive.v1/obj/Debug/build.force
+/Reactive.v1/js/views/inventory/articles_amazon_explorer.js
+/Reactive.v1/js/views/inventory/articles_amazon_explorer.js.map
