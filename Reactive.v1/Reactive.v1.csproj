@@ -1048,8 +1048,15 @@
     <Content Include="img\p_big3.jpg" />
     <Content Include="img\rails_logo.png" />
     <Content Include="img\zender_logo.png" />
+    <Content Include="js\config\routes.js" />
+    <Content Include="js\config\settings.js" />
+    <Content Include="js\config\start.js" />
+    <Content Include="js\ctrls\panels.js" />
     <Content Include="js\jquery.steps.js" />
     <Content Include="js\jquery.validate.js" />
+    <Content Include="js\lib\core.js" />
+    <Content Include="js\lib\jx.js" />
+    <Content Include="js\lib\utils.js" />
     <Content Include="js\plugins\chartist\chartist.min.js.map" />
     <Content Include="js\plugins\diff_match_patch\COPYING" />
     <Content Include="js\plugins\justified-gallery\README.md" />
@@ -1097,6 +1104,23 @@
     <Content Include="css\plugins\slick\fonts\slick.eot" />
     <Content Include="css\plugins\slick\fonts\slick.ttf" />
     <Content Include="css\plugins\slick\fonts\slick.woff" />
+    <Content Include="js\config\routes.js.map" />
+    <Content Include="js\config\settings.js.map" />
+    <Content Include="js\config\start.js.map" />
+    <Content Include="js\ctrls\panels.js.map" />
+    <Content Include="js\lib\core.js.map" />
+    <Content Include="js\lib\jx.js.map" />
+    <Content Include="js\lib\utils.js.map" />
+    <Content Include="js\views\company\account.js.map" />
+    <Content Include="js\views\company\dashboard.js.map" />
+    <Content Include="js\views\company\edit_division.js.map" />
+    <Content Include="js\views\company\organization.js.map" />
+    <Content Include="js\views\home\home.js.map" />
+    <Content Include="js\views\home\login.js.map" />
+    <Content Include="js\views\inventory\articles_amazon_explorer.js.map" />
+    <Content Include="js\views\inventory\articles_categories.js.map" />
+    <Content Include="js\views\inventory\articles_explorer.js.map" />
+    <Content Include="js\views\profiles\profiles_explore.js.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -1550,6 +1574,16 @@
     <Content Include="js\redux.js" />
     <Content Include="js\require.js" />
     <Content Include="js\sweetalert-dev.js" />
+    <Content Include="js\views\company\account.js" />
+    <Content Include="js\views\company\dashboard.js" />
+    <Content Include="js\views\company\edit_division.js" />
+    <Content Include="js\views\company\organization.js" />
+    <Content Include="js\views\home\home.js" />
+    <Content Include="js\views\home\login.js" />
+    <Content Include="js\views\inventory\articles_amazon_explorer.js" />
+    <Content Include="js\views\inventory\articles_categories.js" />
+    <Content Include="js\views\inventory\articles_explorer.js" />
+    <Content Include="js\views\profiles\profiles_explore.js" />
     <Content Include="js\waitMe.js" />
     <Content Include="minor.html" />
     <Content Include="Web.config" />
