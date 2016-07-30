@@ -65,7 +65,7 @@ export class BasePanel extends core.base.BaseView {
 
             </div>
 
-                <div className="ibox-content">
+                <div className="ibox-content col-lg-12">
                 {this.props.children}
             </div>
 

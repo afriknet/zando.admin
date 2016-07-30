@@ -17,6 +17,7 @@ var b: any = rb;
 interface EditDivisionState extends core.base.BaseState {
     flow: string
 }
+
 export interface EditDivisionProps extends core.base.BaseProps {
     divid: string
 }

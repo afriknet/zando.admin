@@ -20,35 +20,47 @@ export var routes: Types.RouteList = {
         url: 'home/home',
     },
 
-    '/account/dashboard': {
-        url: 'company/account',
-        title: 'Account',
-        path: ['<a href="/account/dashboard">Company</a>', '<strong>Dashboard</strong>']
+    '/inventaire/articles': {
+        url: 'inventory/articles',
+        title: 'Articles',
+        path: ['<a href="/Accueil/articles">Articles</a>', '<strong>Articles</strong>']
     },
 
-    '/account/profile': {
-        url: 'company/account',
-        title:'Account',
-        path: ['<a href="/account/profile">Company</a>', '<strong>Profile</strong>' ]
-    },
+    '/inventaire/categories': {
+        url: '/inventory/articles_categories',
+        title: 'Categories',
+        path: ['<a href="/inventaire/categories"><strong>Cartegories</strong></a>'] //'',
+    }
 
-    '/account/organization': {
-        url: 'company/account',
-        params:'organization',
-        title: 'Account',
-        path: ['<a href="/account/organization">Company</a>', '<strong>Organization</strong>']
-    },
+    //'/account/dashboard': {
+    //    url: 'company/account',
+    //    title: 'Account',
+    //    path: ['<a href="/account/dashboard">Company</a>', '<strong>Dashboard</strong>']
+    //},
 
-    '/account/employees': {
-        url: 'company/account',
-        title: 'Account',
-        path: ['<a href="/account/employees">Company</a>', '<strong>Employees</strong>']
-    },
+    //'/account/profile': {
+    //    url: 'company/account',
+    //    title:'Account',
+    //    path: ['<a href="/account/profile">Company</a>', '<strong>Profile</strong>' ]
+    //},
 
-    '/profiles/explore': {
-        url: '/profiles/profiles_explore',
-        title: 'Profiles',
-        path: ['<a href="/profiles/explore">Profiles</a>', '<strong>Explore</strong>']
-    },
+    //'/account/organization': {
+    //    url: 'company/account',
+    //    params:'organization',
+    //    title: 'Account',
+    //    path: ['<a href="/account/organization">Company</a>', '<strong>Organization</strong>']
+    //},
+
+    //'/account/employees': {
+    //    url: 'company/account',
+    //    title: 'Account',
+    //    path: ['<a href="/account/employees">Company</a>', '<strong>Employees</strong>']
+    //},
+
+    //'/profiles/explore': {
+    //    url: '/profiles/profiles_explore',
+    //    title: 'Profiles',
+    //    path: ['<a href="/profiles/explore">Profiles</a>', '<strong>Explore</strong>']
+    //},
     
 }

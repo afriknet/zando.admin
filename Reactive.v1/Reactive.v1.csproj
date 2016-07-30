@@ -179,6 +179,7 @@
     <Content Include="css\plugins\toastr\toastr.min.css" />
     <Content Include="css\plugins\touchspin\jquery.bootstrap-touchspin.min.css" />
     <Content Include="css\style.css" />
+    <Content Include="css\sweetalert.css" />
     <Content Include="css\waitMe.css" />
     <Content Include="email_templates\action.html" />
     <Content Include="email_templates\alert.html" />
@@ -1047,6 +1048,7 @@
     <Content Include="img\p_big3.jpg" />
     <Content Include="img\rails_logo.png" />
     <Content Include="img\zender_logo.png" />
+    <Content Include="js\jquery.validate.js" />
     <Content Include="js\plugins\chartist\chartist.min.js.map" />
     <Content Include="js\plugins\diff_match_patch\COPYING" />
     <Content Include="js\plugins\justified-gallery\README.md" />
@@ -1546,6 +1548,7 @@
     <Content Include="js\react.js" />
     <Content Include="js\redux.js" />
     <Content Include="js\require.js" />
+    <Content Include="js\sweetalert-dev.js" />
     <Content Include="js\waitMe.js" />
     <Content Include="minor.html" />
     <Content Include="Web.config" />
@@ -1571,6 +1574,8 @@
     <TypeScriptCompile Include="src\views\company\organization.tsx" />
     <TypeScriptCompile Include="src\views\home\home.tsx" />
     <TypeScriptCompile Include="src\views\home\login.tsx" />
+    <TypeScriptCompile Include="src\views\inventory\articles_categories.tsx" />
+    <TypeScriptCompile Include="src\views\inventory\articles_explorer.tsx" />
     <TypeScriptCompile Include="src\views\profiles\profiles_explore.tsx" />
   </ItemGroup>
   <ItemGroup>
