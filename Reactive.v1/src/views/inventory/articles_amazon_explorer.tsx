@@ -21,7 +21,6 @@ export class AmazonArticlesExplorer extends core.base.BaseView {
 
     props:AmazonArticlesExplorerProps;
     
-
     render() {
 
         var html =
@@ -32,7 +31,7 @@ export class AmazonArticlesExplorer extends core.base.BaseView {
                     <pn.BasePanel style={{ minHeight: 350 }}>
                                                 
                         <h2>Articles <button className="btn btn-primary pull-right btn-new-cat" onClick={this.add_new_article.bind(this)}>
-                            <i className="fa fa-plus-circle"></i> Ajouter 
+                            <i className="fa fa-plus-circle"></i> Importer un article 
                             </button>
                         </h2>
 
@@ -111,7 +110,7 @@ export class AmazonArticlesExplorer extends core.base.BaseView {
 
         ReactDOM.unmountComponentAtNode(this.root.find('.active-content')[0]);
 
-        ReactDOM.render(<AmazonArticleWizard title={<span><i className="fa fa-plus-circle"></i> Ajouter un article</span>} />, this.root.find('.active-content')[0]);
+        ReactDOM.render(<AmazonArticleWizard title={<span><i className="fa fa-plus-circle"></i> Importer un article</span>} />, this.root.find('.active-content')[0]);
     }
 }
 
@@ -231,32 +230,70 @@ class AmazonArticleWizardPage extends core.base.BaseView {
 
 class AmazonArticlesSearchPage extends AmazonArticleWizardPage {
 
+    selected: boolean;
+
     get_title() {
 
         return <span>Recherche d'articles</span>
     }
 
-    componentDidMount(){
+    componentDidMount() {
 
         super.componentDidMount();
 
-        this.root.find(":checkbox")['labelauty']( { label: false } );
+        this.root.find(":checkbox")['labelauty']({ label: false });
+
+        $('body').off('click', '.td-checkbox [type="checkbox"]');
+
+        var that = this;
+
+        $('body').on('click', '.td-checkbox [type="checkbox"]', (e: Event) => {
+
+            if ($(e.currentTarget).is(':checked')) {
+
+                var id = $(e.currentTarget).closest('td').attr('data-check');
+
+                that.root.find('.td-checkbox').not('[data-check="{0}"]'.format(id)).find('[type="checkbox"]').prop('checked', false);
+            }
+        });
+
     }
 
 
-    add_radios(){
+
+    componentWillUnmount() {
+
+        $('body').off('click', '.td-checkbox label');
+    }
+
+
+    select_all() {
+
+        this.root.find('.td-checkbox [type="checkbox"]').prop('checked', !this.selected);
+
+        this.selected = !this.selected;
+    }
+
+
+
+    add_radios() {
 
         var views = [];
+
+        var count = 0;
 
         _.each(Object.keys(AmazonArticlesSearchPage.searchIndex), index => {
 
             var view =
                 <b.Col lg={4}>
-                    <table width="100%">
+
+                    <table width="100%" className="search-index-row">
                         <tr>
-                            <td style={ { width:'10%' } }><input type="checkbox"/></td>
+                            <td style={ { width: '10%' } } className="td-checkbox" data-check={++count}>
+                                <input type="checkbox"/>
+                            </td>
                             <td>
-                                <h3 className="pull-left" style={{ paddingLeft:10 }}>{index}</h3>
+                                <h3 className="pull-left" style={{ paddingLeft: 10 }}>{index}</h3>
                             </td>
                         </tr>
                     </table>
@@ -265,9 +302,9 @@ class AmazonArticlesSearchPage extends AmazonArticleWizardPage {
             views.push(view);
         });
 
-        
+
         return views;
-        
+
     }
     
 
