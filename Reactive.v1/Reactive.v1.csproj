@@ -63,8 +63,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\animate.css" />
+    <Content Include="css\bootstrap-select.css" />
     <Content Include="css\bootstrap.css" />
     <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\jquery-labelauty.css" />
+    <Content Include="css\jquery.steps.css" />
     <Content Include="css\patterns\1.png" />
     <Content Include="css\patterns\2.png" />
     <Content Include="css\patterns\3.png" />
@@ -119,6 +122,9 @@
     <Content Include="css\plugins\iCheck\custom.css" />
     <Content Include="css\plugins\iCheck\green%402x.png" />
     <Content Include="css\plugins\iCheck\green.png" />
+    <Content Include="js\bootstrap-select.js" />
+    <Content Include="js\jquery-labelauty.js" />
+    <Content Include="js\plugins\iCheck\react-icheck.js" />
     <Content Include="css\plugins\images\bootstrap-colorpicker\alpha-horizontal.png" />
     <Content Include="css\plugins\images\bootstrap-colorpicker\alpha.png" />
     <Content Include="css\plugins\images\bootstrap-colorpicker\hue-horizontal.png" />
@@ -1094,6 +1100,7 @@
     <Content Include="css\plugins\slick\fonts\slick.eot" />
     <Content Include="css\plugins\slick\fonts\slick.ttf" />
     <Content Include="css\plugins\slick\fonts\slick.woff" />
+    <Content Include="css\plugins\iCheck\index.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -1115,6 +1122,7 @@
     <Content Include="js\ko.mapping.js" />
     <Content Include="js\lodash.js" />
     <Content Include="js\page.js" />
+    <Content Include="js\plugins\iCheck\icheck.js" />
     <Content Include="js\q.js" />
     <Content Include="js\react-addons.js" />
     <Content Include="js\react-bootstrap.js" />
@@ -1131,6 +1139,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="css\images\" />
     <Folder Include="locales\" />
     <Folder Include="typings\" />
   </ItemGroup>
